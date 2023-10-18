@@ -57,8 +57,8 @@ $("#yellow").on("click", function () {
 });
 
 function playSound(colorPressed) {
-  blueSound = new Audio((src = "./sounds/" + colorPressed + ".mp3"));
-  blueSound.play();
+  var audio = new Audio((src = "./sounds/" + colorPressed + ".mp3"));
+  audio.play();
 }
 
 function pressButton(colorPressed) {
